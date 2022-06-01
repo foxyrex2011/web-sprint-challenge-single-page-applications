@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +38,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.home-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
 }
