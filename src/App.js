@@ -43,7 +43,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    schema.isValid(pizza).then(valid => setDisabled(!!valid))
+    schema.isValid(pizza).then(valid => setDisabled(!valid))
   }, [pizza])
 
   return (

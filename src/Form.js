@@ -14,7 +14,7 @@ export default function Form (props) {
         <div>
             <form id="pizza-form" onSubmit={submit}>
                 <div>
-                    <button disabled={disabled}>submit</button>
+                    <button disabled={disabled} id="order-button">submit</button>
                     <label> Name&nbsp;
                         <input
                             type="text"

@@ -9,15 +9,17 @@ const formSchema = yup.object().shape({
     size: yup
         .string()
         .oneOf(["small", "medium", "large"], "Pick a size"),
+    
+    topping1: yup.boolean(),
+    topping2: yup.boolean(),
+    topping3: yup.boolean(),
+    topping4: yup.boolean(),
+    
     special: yup
         .string()
         .trim()
         .required("sepcial instructions only")
-        .min(0, "Anything else?"),
-    topping1: yup.boolean(),
-    topping2: yup.boolean(),
-    topping3: yup.boolean(),
-    topping4: yup.boolean()
+        .min(0, "Anything else?")
 });
 
 export default formSchema;
